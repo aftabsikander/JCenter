@@ -1,6 +1,6 @@
 apply plugin: 'com.jfrog.bintray'
 
-version = PUBLISH_VERSION
+version = project.PUBLISH_VERSION
 
 if (project.hasProperty("android")) { // Android libraries
     task sourcesJar(type: Jar) {
@@ -39,16 +39,16 @@ bintray {
 
     configurations = ['archives']
     pkg {
-        repo = BINTRAY_REPO
-        name = BINTRAY_NAME
-        desc = LIBRARY_DESCRIPTION
-        websiteUrl = SITE_URL
-        vcsUrl = GIT_URL
-        licenses = ALL_LINCENSE
+        repo = project.BINTRAY_REPO
+        name = project.BINTRAY_NAME
+        desc = project.LIBRARY_DESCRIPTION
+        websiteUrl = project.SITE_URL
+        vcsUrl = project.GIT_URL
+        licenses = project.ALL_LINCENSE
         publish = true
         publicDownloadNumbers = true
         version {
-            desc = LIBRARY_DESCRIPTION
+            desc = project.LIBRARY_DESCRIPTION
             gpg {
                 sign = true //Determines whether to GPG sign the files. The default is false
                 passphrase = properties.getProperty("bintray.gpg.password")
