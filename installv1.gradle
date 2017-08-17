@@ -12,9 +12,9 @@ install {
                 artifactId PUBLISH_ARTIFACT_ID
 
                 // Add your description here
-                name libraryName
-                description libraryDescription
-                url siteUrl
+                name LINCENSE_NAME
+                description LIBRARY_DESCRIPTION
+                url SITE_URL
 
                 // Set your license
                 licenses {
