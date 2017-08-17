@@ -8,8 +8,8 @@ install {
         pom {
             project {
                 packaging 'aar'
-                groupId publishedGroupId
-                artifactId artifact
+                groupId PUBLISH_GROUP_ID
+                artifactId PUBLISH_ARTIFACT_ID
 
                 // Add your description here
                 name libraryName
@@ -19,21 +19,21 @@ install {
                 // Set your license
                 licenses {
                     license {
-                        name licenseName
-                        url licenseUrl
+                        name LINCENSE_NAME
+                        url LINCENSE_URL
                     }
                 }
                 developers {
                     developer {
-                        id developerId
-                        name developerName
-                        email developerEmail
+                        id DEVELOPER_ID
+                        name DEVELOPER_NAME
+                        email DEVELOPER_EMAIL
                     }
                 }
                 scm {
-                    connection gitUrl
-                    developerConnection gitUrl
-                    url siteUrl
+                    connection GIT_URL
+                    developerConnection SITE_URL
+                    url SITE_URL
 
                 }
             }
